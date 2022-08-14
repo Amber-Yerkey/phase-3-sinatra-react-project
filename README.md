@@ -1,5 +1,8 @@
 # Phase 3 Project Guidelines
 
+## Front End Link
+https://github.com/Amber-Yerkey/phase-3-front-end
+
 ## Learning Goals
 
 - Build a web basic API with Sinatra and Active Record to support a React
