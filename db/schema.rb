@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_12_190329) do
+ActiveRecord::Schema.define(version: 2022_08_25_005050) do
 
   create_table "owners", force: :cascade do |t|
     t.string "first_name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2022_08_12_190329) do
     t.string "species"
     t.string "typing"
     t.boolean "claimed"
+    t.string "image"
   end
 
 end
