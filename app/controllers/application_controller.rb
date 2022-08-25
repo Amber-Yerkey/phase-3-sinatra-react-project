@@ -4,18 +4,18 @@ class ApplicationController < Sinatra::Base
   # read
   
   get "/pokemonWithOwner" do
-    pokemon = Pokemon.all
-    pokemon.to_json(include: :owner)
+    pokemons = Pokemon.all
+    pokemons.to_json(include: :owner)
   end
 
   # Update
 
-  patch '/pokemon/:id' do
+  patch '/pokemonWithOwner/:id' do
     pokemon = Pokemon.find(params[:id])
     pokemon.update(
       claimed: params[:claimed]
     )
-    pokemon.to_json
+    pokemon.to_json(include: :owner)
   end
 
   # Delete
