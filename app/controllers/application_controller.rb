@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
   # read
   
   get "/pokemonWithOwner" do
-    pokemons = Pokemon.all
+    pokemons = Pokemon.all.order(:name)
     pokemons.to_json(include: :owner)
   end
 
